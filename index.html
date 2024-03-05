@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap web</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <meta name="viewport" content="width=device-width,initial-scale=1">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"> -->
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> -->
+     <link rel="stylesheet" href="css/style.css?v-1">
+</head>
+<style>
+    .slider-container {
+        position: relative!important;
+      width: 100vw;
+      max-width: 1200px;
+      margin: auto;
+      overflow: hidden;
+    }
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+    }
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .prev {
+      left: 10px;
+    }
+    .next {
+      right: 10px;
+    }
+     /* .text-layout{
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: white;
+      font-size: 18px;
+      z-index: 2;
+      margin-left: 4%;
+    }  */
+  </style>
+<body>
+    <nav class="navbar navbar-expand-md nav-mannual sticky">
+        <div class="container">
+            <a href=""class="navbar-brand"><img src="logo.png"></a>
+            <button class="navbar-toggler"type="button"data-toggle="collapse"data-target="#collapsenavbar">
+                <span class="navbar-toggler-icon" style="color: #E2A99C;"></span>
+            </button>
+           <div class="collapse navbar-collapse text-center"id="collapsenavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item text-white"id=""><a style="color: #FFFFFF;" href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item text-white"id=""><a style="color: #FFFFFF;" href="#Overview" class="nav-link">Overview</a></li>
+                <li class="nav-item text-white"id=""><a style="color: #FFFFFF;" href="#Location" class="nav-link">Location</a></li>
+                <li class="nav-item text-white"id=""><a style="color: #FFFFFF;" href="#Amenities" class="nav-link">Amenities</a></li>
+                <li class="nav-item text-white"id=""><a style="color: #FFFFFF;" href="#Specification" class="nav-link">Specification</a></li>
+                <li class="nav-item text-white"id=""><a  style="color: #FFFFFF;"href="#About" class="nav-link">About</a></li>
+                
+            </ul>
+            <div class="number">
+                <span style="color: white;font-size: 20PX;margin-left: 10px;"><p class="fa fa-phone">+91 20 6705 7005</p></span>
+            </div>
+            <div class="contact-form" id="hidden">
+                <button class="btn" id="openformbutton">ENQUIRE NOW</button>
+
+            </div>
+
+           </div>
+
+        </div>
+    </nav>
+<section class="section_hero" id="home">
+ <div class="bg-img">
+    <div class="banner-caption.text-centre.fade-In">
+        <div class="text-white bodoni banner-title text">
+            <h1 style="padding-top: 8%;text-align: center; font-family:LTC bodoni;">Welcome to an experience,<br>
+                Pune’s never experienced before</h1>
+            <h3 style="font-size: 20px;color: #FFFFFF;font-family:sans-serif;text-align: center;margin-top: 3%;">Crown Towers by Amanora</h3>
+            <h5 style="font-family: sans-serif;font-size: 22px;text-align: center;margin-top: 17px;">Luxurious 2, 2.5, 3 and 4 BHK & Duplex Apartments<br>
+                            Starting from<strong> ₹ 1.58 CR*</strong></h5>
+        </div>
+     </div>
+  </div>
+</section>
+<div class="over-img"id="Overview">
+     
+        <div class="row">
+            <div class="col">
+                <img style="width:80%;margin-left:5%;" class="col rel" src="overview.png">
+            </div>
+            <div class="col">
+                <div class="contnt">
+                    <h2 style="font-size: 45px;">Iconic at the top.<br>
+                        Incredible at every level.
+                    </h2>
+                    <p class="para">Crown Towers is not just an address, it’s a lifestyle<br>
+                    experience. While indoors offer sensibly designed spaces for<br>
+                    luxurious indoor living, the common spaces put together a<br>
+                    sensational lifestyle, to ensure that every aspect is a curated<br>
+                    experience.</p>
+                    <h3 class="head">Welcome to an experience Pune hasn’t experienced before.</h3>
+                    <div class="button"><button class="btn">ENQUIRE NOW</button></div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="banner-caption text-center">
+            <div class="main">
+            <div class="text">
+            <h1 style="font-size: 46px;" class="section _title">Pune’s Tallest SKYPARK<br class="hidden-xs">Experience Is Here.</h1>
+            </div>
+            <p class="in">When we say that Crown Towers takes you to the top of the world, we mean<br class="hidden-xs">
+                every word of it. At SKYPARK 31, indulge in a rooftop experience that is<br class="hidden-xs">
+                unmatched, unprecedented and unparalleled in Pune.</p>
+                <div class="button"><button class="btn">ENQUIRE NOW</button></div>
+                </div>
+        </div>
+</div>
+
+<div class="banner" id="Location">
+    <div class="layout">
+        <div class="menu">
+            <h1 style="font-size:45px;" class="lay">A jewel in the heart of Pune</h1>
+            <p class="itext">There is never a dull moment in Crown Tower and not even around it.<br class="hidden-xs">
+                Living here brings you closer to hassle free living.</p>
+                <div class="build">
+               <a target="_blank" class="img-fluid" href="https://www.google.com/maps/dir/18.579456,73.760768/crown+towers+amanora/@18.5482054,73.6856866,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3bc2c3bd2dc98ae3:0xd11124908f00d548!2m2!1d73.939778!2d18.5175201?entry=ttu"><img src="building.png"></a> 
+               </div>
+               <div class="pin">
+               <img style="width:70px;margin-top: -8%;" class="buil" src="location-pin.png">
+               </div>
+        </div>
+    </div>
+</div>
+<div class="container" id="Amenities">
+ <div class=" slider-container">
+  
+          <div class="slides">
+        <div class="slide" style="background-image: url('amenity-1.jpg');height:100vh;width:100%;"></div>
+        <div class="slide" style="background-image: url('amenity-3.jpg');"></div>
+        <div class="slide" style="background-image: url('amenity-4.jpg');"></div>
+        <div class="slide" style="background-image: url('amenity-5.jpg');"></div>
+        <div class="slide" style="background-image: url('amenity-6.jpg');"></div>
+        <div class="slide" style="background-image: url('amenity-7.jpg');"></div>
+        <div class="slide" style="background-image: url('amenity-8.jpg');"></div>
+        <div class="slide" style="background-image: url('amenity-9.jpg');"></div>
+        <div class="slide" style="background-image: url('amenity-10.jpg');"></div>
+        <div class="slide" style="background-image: url('amenity-11.jpg');"></div>
+        <div class="slide" style="background-image: url('amenity-12.jpg');"></div>
+        <div class="slide" style="background-image: url('amenity-13.jpg');"></div>
+        <div class="slide" style="background-image: url('amenity-14.jpg');"></div>
+        <div class="slide" style="background-image: url('amenity-15.jpg');"></div>
+        <div class="slide" style="background-image: url('amenity-16.jpg');"></div>
+        <!-- Add more slides as needed -->
+    </div>
+    <div class="arrow prev" onclick="prevSlide()">&#9665;</div>
+    <div class="arrow next" onclick="nextSlide()">&#9655;</div>
+  </div>
+  <!-- <script>
+    let currentIndex = 0;
+
+function showSlide(index) {
+  const slides = document.querySelector('.slides');
+  const slideWidth = document.querySelector('.slide').offsetWidth;
+  const newPosition = -index * slideWidth;
+  slides.style.transform = `translateX(${newPosition}px)`;
+  currentIndex = index;
+}
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % document.querySelectorAll('.slide').length;
+  showSlide(currentIndex);
+}
+function prevSlide() {
+  currentIndex = (currentIndex - 1 + document.querySelectorAll('.slide').length) % document.querySelectorAll('.slide').length;
+  showSlide(currentIndex);
+}
+function startAutoplay() {
+    intervalId = setInterval(nextSlide, 2000); // Change 3000 to the desired interval in milliseconds (3 seconds in this example)
+  }
+
+  function stopAutoplay() {
+    clearInterval(intervalId);
+  }
+
+  startAutoplay(); 
+  </script> -->
+
+
+<div class="bgcolor">
+    <div class="container">
+        <div class="row"> 
+            <div class="col">   
+                <h1 style="font-family: LTCbodoni;color: #172C47;font-size: 43px;padding-top:6%;margin-left:5%;">Infrastructure that caters<br class="hidden-xs">
+                   To holistic living</h1>
+               <p style="color: #222222;font-family: sans-serif;font-size: 17px;margin-top: 20px;margin-left: 5%;">From space design to utility, every facet of Crown<br class="hidden-xs">
+                    Towers gives a sense of being on top of the world.</p>
+            <div class="custom-scroll">
+                 <ul class="scroll-ul"style="overflow-y: scroll;height:300px;">
+                     <div class="i-block">
+                         <li>Cohesive designs for ample space and privacy</li>
+                         <li>Expansive views of the horizon on all sides</li>
+                         <li>Fantastic ventilation and natural light</li>
+                         <li>Balconies that seamlessly integrate indoors & outdoors</li>
+                         <li>Individualised green spaces along the façade of the tower</li>
+                         <li>ACs in all bedrooms</li>
+                          <li>Modular kitchen with chimney</li>
+                          <li>Digital locking system</li>
+                         <li>Main entrance door with veneer finish and polish</li>
+                         <li>Branded chrome finished bathroom fittings</li>
+                     </div>
+                     <div class="i-block">
+                          <li>Aluminium sliding windows</li>
+                           <li>Gypsum plaster for ceiling and walls</li>
+                          <li>Premium double-glazed flooring</li>
+                         <li>Wooden flooring in master bedroom</li>
+                     </div>
+                     <div class="i-block">
+                          <li>Branded door fittings</li>
+                          <li>Designer sanitary ware</li>
+                         <li>Designer dado in toilet up to 7 feet</li>
+                         <li>Geysers in all toilets</li>
+                         <li>Concealed plumbing</li>
+                     </div>
+                     <div class="i-block">
+                          <li>Exhaust fans in toilets and kitchen</li>
+                          <li>Piped gas supply</li>
+                          <li>Light and fan fittings</li>
+                         <li>Fire detection and fire suppression systems</li>
+                         <li>Glass elevator</li>
+                     </div>
+                 </ul>
+             </div>
+        </div>
+            <div class="col">
+                <img src="https://amanora.com/crown-towers/images/infra.jpg">
+            </div>
+        </div>  
+       </div>
+</div>
+<div class="spec" id="Specification">
+    <div>
+        <h1 style="font-family: LTCbodoni;font-weight: 400;color:#E2A99C;text-align: center;padding-top:70px;font-size:45px;">A Jewel In The Heart Of Pune</h1>
+    </div>
+    <div>
+        <p style="color: #FFFFFF;font-size: 17px;font-weight: 500;text-align: center;padding-top: 20px;">There is never a dull moment in Crown Tower and not even around<br>
+            it. Living here brings you closer to hassle free living.</p>
+    </div>
+
+</div>
+
+    <div class="about">
+        <h1 style="color: #222222;font-family: LTCbodoni;margin-left:58%;padding-top: 13%;font-size: 45px;">One of India’s most<br class="hidden-xs">
+            Trusted Developers</h1>
+            <p style="color: #222222;font-family: sans-serif;margin-left: 58%;font-size: 17px;margin-top: 25px;">With over 300 awards across multiple categories, Amanora is<br>
+                 known for providing a complete hassle-free lifestyle to its<br>
+                  residents. Amanora Park Town has been planned by world’s <br>
+                  leading town planners, international architects and visionaries.<br>
+                   Moreover, it is managed by an ever-reliable private management<br>
+                    company and not by a third-party vendor.</p>
+    </div>
+    
+    
+    <div class="bg_color d-inline-flex" id="About">
+           <div>
+            <img style="height: 140px;width:140px;margin-left:90px;margin-top:20px;" src="crown_towers_qr.png">
+            </div>
+           <div>
+            <p style="color: #FFFFFF;font-family: sans-serif;font-size: 14px;text-align: center;margin-top:70px;margin-left: 50px;" class="pri">© 2024 Crown Towers, All Rights Reserved<span> <a style="color: #FFFFFF;" href="https://amanora.com/privacy-policy"> |Privacy Policy |</a></span> Maha Rera P52100047454</p>
+            </div>
+            <div>
+                <p style="color: #FFFFFF;font-family: sans-serif;font-size: 14px;margin-top:70px;margin-left:250px;">Marketed By<span><a style="color: #FFFFFF;" href="https://www.beyondwalls.com/"> BeyoundWalls</a></span></p>
+            </div>
+    </div>
+    <!-- <form id="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" class="form-control" name="name" placeholder="Name">
+      <label for="email">Email</label>
+      <input type="email" id="email" class="form-control" name="email" placeholder="Email">
+      <label for="num">Phone</label>
+      <input type="number" id="num" class="form-control" name="number" placeholder="Phone">
+      <button type="Submit" style="color: #FFFFFF;background-color: primary;">Submit</button>
+    </form> -->
+    <button id="openFormButton">Open Contact Form</button>
+
+    <div id="contactForm" class="hidden">
+        <form>
+            <!-- Your contact form fields go here -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+    <script>
+        let currentIndex = 0;
+    
+    function showSlide(index) {
+      const slides = document.querySelector('.slides');
+      const slideWidth = document.querySelector('.slide').offsetWidth;
+      const newPosition = -index * slideWidth;
+      slides.style.transform = `translateX(${newPosition}px)`;
+      currentIndex = index;
+    }
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % document.querySelectorAll('.slide').length;
+      showSlide(currentIndex);
+    }
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + document.querySelectorAll('.slide').length) % document.querySelectorAll('.slide').length;
+      showSlide(currentIndex);
+    }
+    function startAutoplay() {
+        intervalId = setInterval(nextSlide, 2000); // Change 3000 to the desired interval in milliseconds (3 seconds in this example)
+      }
+    
+      function stopAutoplay() {
+        clearInterval(intervalId);
+      }
+    
+      startAutoplay(); 
+
+
+
+      document.addEventListener("DOMContentLoaded", function () {
+    const openFormButton = document.getElementById("openFormButton");
+    const contactForm = document.getElementById("contactForm");
+
+    openFormButton.addEventListener("click", function () {
+        // Toggle the 'hidden' class to show/hide the form
+        contactForm.classList.toggle("hidden");
+    });
+});
+
+      </script>
+     
+                                                   
+                                     
+                  
+      
+
+ <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="css/JS/script.js"></script>   
+</body>
+</html>
